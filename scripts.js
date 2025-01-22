@@ -4,5 +4,9 @@ function gerarNumero(){
 
     const resultado = Math.floor(Math.random() * (max - min + 1)) + min;
 
-    alert(resultado)
+    if(max <= min){
+        alert("O valor mínimo tem que ser MENOR que o máximo")
+    } else{
+        alert(resultado)
+    }
 }
